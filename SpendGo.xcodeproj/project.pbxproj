@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D6C771623FBA90F003F867B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771523FBA90F003F867B /* AppDelegate.swift */; };
+		0D6C771923FBA90F003F867B /* SpendGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771723FBA90F003F867B /* SpendGo.xcdatamodeld */; };
+		0D6C771B23FBA90F003F867B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771A23FBA90F003F867B /* SceneDelegate.swift */; };
+		0D6C771D23FBA90F003F867B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771C23FBA90F003F867B /* Event.swift */; };
+		0D6C771F23FBA90F003F867B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771E23FBA90F003F867B /* ContentView.swift */; };
+		0D6C772123FBA910003F867B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6C772023FBA910003F867B /* Assets.xcassets */; };
+		0D6C772423FBA910003F867B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6C772323FBA910003F867B /* Preview Assets.xcassets */; };
+		0D6C772723FBA910003F867B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6C772523FBA910003F867B /* LaunchScreen.storyboard */; };
+		71D1E604275966345E431E31 /* Pods_SpendGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951440DF9AFD1DA12C6EA27 /* Pods_SpendGo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D6C771223FBA90F003F867B /* SpendGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6C771523FBA90F003F867B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D6C771823FBA90F003F867B /* SpendGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpendGo.xcdatamodel; sourceTree = "<group>"; };
+		0D6C771A23FBA90F003F867B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0D6C771C23FBA90F003F867B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0D6C771E23FBA90F003F867B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D6C772023FBA910003F867B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D6C772323FBA910003F867B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D6C772623FBA910003F867B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D6C772823FBA910003F867B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E97CC39EBDB35E74E2283F3 /* Pods-SpendGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendGo.debug.xcconfig"; path = "Target Support Files/Pods-SpendGo/Pods-SpendGo.debug.xcconfig"; sourceTree = "<group>"; };
+		9951440DF9AFD1DA12C6EA27 /* Pods_SpendGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpendGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0558193762D0B0EAF1530CA /* Pods-SpendGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendGo.release.xcconfig"; path = "Target Support Files/Pods-SpendGo/Pods-SpendGo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D6C770F23FBA90F003F867B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D1E604275966345E431E31 /* Pods_SpendGo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D6C770923FBA90F003F867B = {
+			isa = PBXGroup;
+			children = (
+				0D6C771423FBA90F003F867B /* SpendGo */,
+				0D6C771323FBA90F003F867B /* Products */,
+				22BB4F68C36896ACB2C8AE0E /* Pods */,
+				6A96408442CAC239B32DF8D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D6C771323FBA90F003F867B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D6C771223FBA90F003F867B /* SpendGo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D6C771423FBA90F003F867B /* SpendGo */ = {
+			isa = PBXGroup;
+			children = (
+				0D6C771523FBA90F003F867B /* AppDelegate.swift */,
+				0D6C771A23FBA90F003F867B /* SceneDelegate.swift */,
+				0D6C771C23FBA90F003F867B /* Event.swift */,
+				0D6C771E23FBA90F003F867B /* ContentView.swift */,
+				0D6C772023FBA910003F867B /* Assets.xcassets */,
+				0D6C772523FBA910003F867B /* LaunchScreen.storyboard */,
+				0D6C772823FBA910003F867B /* Info.plist */,
+				0D6C771723FBA90F003F867B /* SpendGo.xcdatamodeld */,
+				0D6C772223FBA910003F867B /* Preview Content */,
+			);
+			path = SpendGo;
+			sourceTree = "<group>";
+		};
+		0D6C772223FBA910003F867B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D6C772323FBA910003F867B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22BB4F68C36896ACB2C8AE0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E97CC39EBDB35E74E2283F3 /* Pods-SpendGo.debug.xcconfig */,
+				C0558193762D0B0EAF1530CA /* Pods-SpendGo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A96408442CAC239B32DF8D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9951440DF9AFD1DA12C6EA27 /* Pods_SpendGo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D6C771123FBA90F003F867B /* SpendGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D6C772B23FBA910003F867B /* Build configuration list for PBXNativeTarget "SpendGo" */;
+			buildPhases = (
+				40E1FEDD56F144DF5308A5AE /* [CP] Check Pods Manifest.lock */,
+				0D6C770E23FBA90F003F867B /* Sources */,
+				0D6C770F23FBA90F003F867B /* Frameworks */,
+				0D6C771023FBA90F003F867B /* Resources */,
+				E6DBA04813C3B624BBA6AFE7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpendGo;
+			productName = SpendGo;
+			productReference = 0D6C771223FBA90F003F867B /* SpendGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D6C770A23FBA90F003F867B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "George Crisan";
+				TargetAttributes = {
+					0D6C771123FBA90F003F867B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0D6C770D23FBA90F003F867B /* Build configuration list for PBXProject "SpendGo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D6C770923FBA90F003F867B;
+			productRefGroup = 0D6C771323FBA90F003F867B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D6C771123FBA90F003F867B /* SpendGo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D6C771023FBA90F003F867B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6C772723FBA910003F867B /* LaunchScreen.storyboard in Resources */,
+				0D6C772423FBA910003F867B /* Preview Assets.xcassets in Resources */,
+				0D6C772123FBA910003F867B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40E1FEDD56F144DF5308A5AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpendGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6DBA04813C3B624BBA6AFE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpendGo/Pods-SpendGo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpendGo/Pods-SpendGo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpendGo/Pods-SpendGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D6C770E23FBA90F003F867B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6C771D23FBA90F003F867B /* Event.swift in Sources */,
+				0D6C771F23FBA90F003F867B /* ContentView.swift in Sources */,
+				0D6C771923FBA90F003F867B /* SpendGo.xcdatamodeld in Sources */,
+				0D6C771623FBA90F003F867B /* AppDelegate.swift in Sources */,
+				0D6C771B23FBA90F003F867B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0D6C772523FBA910003F867B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D6C772623FBA910003F867B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D6C772923FBA910003F867B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D6C772A23FBA910003F867B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D6C772C23FBA910003F867B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E97CC39EBDB35E74E2283F3 /* Pods-SpendGo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SpendGo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SM646J74H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SpendGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.g.crisan.SpendGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D6C772D23FBA910003F867B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0558193762D0B0EAF1530CA /* Pods-SpendGo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SpendGo/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SM646J74H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SpendGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.g.crisan.SpendGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D6C770D23FBA90F003F867B /* Build configuration list for PBXProject "SpendGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6C772923FBA910003F867B /* Debug */,
+				0D6C772A23FBA910003F867B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D6C772B23FBA910003F867B /* Build configuration list for PBXNativeTarget "SpendGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6C772C23FBA910003F867B /* Debug */,
+				0D6C772D23FBA910003F867B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0D6C771723FBA90F003F867B /* SpendGo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D6C771823FBA90F003F867B /* SpendGo.xcdatamodel */,
+			);
+			currentVersion = 0D6C771823FBA90F003F867B /* SpendGo.xcdatamodel */;
+			path = SpendGo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0D6C770A23FBA90F003F867B /* Project object */;
+}
