@@ -9,10 +9,14 @@
 import SwiftUI
 import CoreData
 
-extension Event {
+extension Budget {
     static func create(in managedObjectContext: NSManagedObjectContext){
-        let newEvent = self.init(context: managedObjectContext)
-        newEvent.timestamp = Date()
+        let newBudget = self.init(context: managedObjectContext)
+        newBudget.timestamp = Date()
+        newBudget.id = UUID()
+        newBudget.budgetDesc = "First"
+        newBudget.budgetTitle = "First"
+        
         
         do {
             try  managedObjectContext.save()
@@ -25,7 +29,7 @@ extension Event {
     }   
 }
 
-extension Collection where Element == Event, Index == Int {
+extension Collection where Element == Budget, Index == Int {
     func delete(at indices: IndexSet, from managedObjectContext: NSManagedObjectContext) {
         indices.forEach { managedObjectContext.delete(self[$0]) }       
  

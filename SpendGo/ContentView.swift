@@ -27,7 +27,7 @@ struct ContentView: View {
                     leading: EditButton(),
                     trailing: Button(
                         action: {
-                            withAnimation { Event.create(in: self.viewContext) }
+                            withAnimation { Budget.create(in: self.viewContext) }
                         }
                     ) { 
                         Image(systemName: "plus")
@@ -41,33 +41,33 @@ struct ContentView: View {
 
 struct MasterView: View {
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Event.timestamp, ascending: true)], 
+        sortDescriptors: [NSSortDescriptor(keyPath: \Budget.budgetTitle, ascending: true)],
         animation: .default)
-    var events: FetchedResults<Event>
+    var budgets: FetchedResults<Budget>
 
     @Environment(\.managedObjectContext)
     var viewContext
 
     var body: some View {
         List {
-            ForEach(events, id: \.self) { event in
+            ForEach(budgets, id: \.self) { budget in
                 NavigationLink(
-                    destination: DetailView(event: event)
+                    destination: DetailView(budget: budget)
                 ) {
-                    Text("\(event.timestamp!, formatter: dateFormatter)")
+                    Text("Temp")
                 }
             }.onDelete { indices in
-                self.events.delete(at: indices, from: self.viewContext)
+                self.budgets.delete(at: indices, from: self.viewContext)
             }
         }
     }
 }
 
 struct DetailView: View {
-    @ObservedObject var event: Event
+    @ObservedObject var budget: Budget
 
     var body: some View {
-        Text("\(event.timestamp!, formatter: dateFormatter)")
+        Text("\(budget.budgetTitle ?? "No text")")
             .navigationBarTitle(Text("Detail"))
     }
 }

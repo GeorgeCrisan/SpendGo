@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D6C771623FBA90F003F867B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771523FBA90F003F867B /* AppDelegate.swift */; };
 		0D6C771923FBA90F003F867B /* SpendGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771723FBA90F003F867B /* SpendGo.xcdatamodeld */; };
 		0D6C771B23FBA90F003F867B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771A23FBA90F003F867B /* SceneDelegate.swift */; };
-		0D6C771D23FBA90F003F867B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771C23FBA90F003F867B /* Event.swift */; };
+		0D6C771D23FBA90F003F867B /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771C23FBA90F003F867B /* Budget.swift */; };
 		0D6C771F23FBA90F003F867B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771E23FBA90F003F867B /* ContentView.swift */; };
 		0D6C772123FBA910003F867B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6C772023FBA910003F867B /* Assets.xcassets */; };
 		0D6C772423FBA910003F867B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6C772323FBA910003F867B /* Preview Assets.xcassets */; };
@@ -23,7 +23,7 @@
 		0D6C771523FBA90F003F867B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D6C771823FBA90F003F867B /* SpendGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpendGo.xcdatamodel; sourceTree = "<group>"; };
 		0D6C771A23FBA90F003F867B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0D6C771C23FBA90F003F867B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0D6C771C23FBA90F003F867B /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		0D6C771E23FBA90F003F867B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D6C772023FBA910003F867B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D6C772323FBA910003F867B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 			children = (
 				0D6C771523FBA90F003F867B /* AppDelegate.swift */,
 				0D6C771A23FBA90F003F867B /* SceneDelegate.swift */,
-				0D6C771C23FBA90F003F867B /* Event.swift */,
+				0D6C771C23FBA90F003F867B /* Budget.swift */,
 				0D6C771E23FBA90F003F867B /* ContentView.swift */,
 				0D6C772023FBA910003F867B /* Assets.xcassets */,
 				0D6C772523FBA910003F867B /* LaunchScreen.storyboard */,
@@ -94,7 +94,6 @@
 				4E97CC39EBDB35E74E2283F3 /* Pods-SpendGo.debug.xcconfig */,
 				C0558193762D0B0EAF1530CA /* Pods-SpendGo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -221,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D6C771D23FBA90F003F867B /* Event.swift in Sources */,
+				0D6C771D23FBA90F003F867B /* Budget.swift in Sources */,
 				0D6C771F23FBA90F003F867B /* ContentView.swift in Sources */,
 				0D6C771923FBA90F003F867B /* SpendGo.xcdatamodeld in Sources */,
 				0D6C771623FBA90F003F867B /* AppDelegate.swift in Sources */,
