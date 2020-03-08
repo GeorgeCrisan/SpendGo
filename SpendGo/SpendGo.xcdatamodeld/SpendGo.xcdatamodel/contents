@@ -4,10 +4,9 @@
         <attribute name="budgetDesc" optional="YES" attributeType="String"/>
         <attribute name="budgetTitle" optional="YES" attributeType="String"/>
         <attribute name="budgetTotal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="entries" optional="YES" attributeType="Binary"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="timestamp" optional="YES" attributeType="Date"/>
-        <relationship name="container" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entry" inverseName="subentity" inverseEntity="Entry"/>
+        <relationship name="container" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entry" inverseName="budgetEntry" inverseEntity="Entry"/>
         <userInfo/>
     </entity>
     <entity name="Entry" representedClassName="Entry" codeGenerationType="class">
@@ -15,11 +14,12 @@
         <attribute name="entDesc" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <relationship name="subentity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Budget" inverseName="container" inverseEntity="Budget"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="budgetEntry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Budget" inverseName="container" inverseEntity="Budget"/>
         <userInfo/>
     </entity>
     <elements>
-        <element name="Budget" positionX="-65.3125" positionY="45.0703125" width="128" height="148"/>
-        <element name="Entry" positionX="261" positionY="234" width="128" height="118"/>
+        <element name="Budget" positionX="-65.3125" positionY="45.0703125" width="128" height="133"/>
+        <element name="Entry" positionX="261" positionY="234" width="128" height="133"/>
     </elements>
 </model>

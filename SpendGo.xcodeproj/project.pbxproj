@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2AC05C2402833B00F7C547 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AC05B2402833B00F7C547 /* Entry.swift */; };
+		0D2AC0602402B17000F7C547 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AC05F2402B17000F7C547 /* DetailView.swift */; };
+		0D2AC0622402B1AC00F7C547 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2AC0612402B1AC00F7C547 /* IndexView.swift */; };
 		0D6C771623FBA90F003F867B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771523FBA90F003F867B /* AppDelegate.swift */; };
 		0D6C771923FBA90F003F867B /* SpendGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771723FBA90F003F867B /* SpendGo.xcdatamodeld */; };
 		0D6C771B23FBA90F003F867B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C771A23FBA90F003F867B /* SceneDelegate.swift */; };
@@ -15,11 +18,18 @@
 		0D6C772123FBA910003F867B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6C772023FBA910003F867B /* Assets.xcassets */; };
 		0D6C772423FBA910003F867B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6C772323FBA910003F867B /* Preview Assets.xcassets */; };
 		0D6C772723FBA910003F867B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6C772523FBA910003F867B /* LaunchScreen.storyboard */; };
+		0DE1580A240BD42C00371A7F /* ListBudgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE15809240BD42C00371A7F /* ListBudgets.swift */; };
+		0DE1580D240BE21B00371A7F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE1580C240BE21B00371A7F /* AppState.swift */; };
+		0DE1580F240C06CD00371A7F /* BudgetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE1580E240C06CC00371A7F /* BudgetForm.swift */; };
+		0DE15811240C06FA00371A7F /* EntryForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE15810240C06FA00371A7F /* EntryForm.swift */; };
 		71D1E604275966345E431E31 /* Pods_SpendGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951440DF9AFD1DA12C6EA27 /* Pods_SpendGo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D6C771223FBA90F003F867B /* SpendGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2AC05B2402833B00F7C547 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		0D2AC05F2402B17000F7C547 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0D2AC0612402B1AC00F7C547 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
+		0D6C771223FBA90F003F867B /* SpendinGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendinGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6C771523FBA90F003F867B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D6C771823FBA90F003F867B /* SpendGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpendGo.xcdatamodel; sourceTree = "<group>"; };
 		0D6C771A23FBA90F003F867B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +39,10 @@
 		0D6C772323FBA910003F867B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D6C772623FBA910003F867B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D6C772823FBA910003F867B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DE15809240BD42C00371A7F /* ListBudgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBudgets.swift; sourceTree = "<group>"; };
+		0DE1580C240BE21B00371A7F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		0DE1580E240C06CC00371A7F /* BudgetForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetForm.swift; sourceTree = "<group>"; };
+		0DE15810240C06FA00371A7F /* EntryForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryForm.swift; sourceTree = "<group>"; };
 		4E97CC39EBDB35E74E2283F3 /* Pods-SpendGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendGo.debug.xcconfig"; path = "Target Support Files/Pods-SpendGo/Pods-SpendGo.debug.xcconfig"; sourceTree = "<group>"; };
 		9951440DF9AFD1DA12C6EA27 /* Pods_SpendGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpendGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0558193762D0B0EAF1530CA /* Pods-SpendGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendGo.release.xcconfig"; path = "Target Support Files/Pods-SpendGo/Pods-SpendGo.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +60,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2AC05D2402834600F7C547 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AC05B2402833B00F7C547 /* Entry.swift */,
+				0D6C771C23FBA90F003F867B /* Budget.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		0D2AC05E2402B15900F7C547 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D2AC05F2402B17000F7C547 /* DetailView.swift */,
+				0D2AC0612402B1AC00F7C547 /* IndexView.swift */,
+				0DE15809240BD42C00371A7F /* ListBudgets.swift */,
+				0DE1580E240C06CC00371A7F /* BudgetForm.swift */,
+				0DE15810240C06FA00371A7F /* EntryForm.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0D6C770923FBA90F003F867B = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +94,7 @@
 		0D6C771323FBA90F003F867B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D6C771223FBA90F003F867B /* SpendGo.app */,
+				0D6C771223FBA90F003F867B /* SpendinGo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +102,11 @@
 		0D6C771423FBA90F003F867B /* SpendGo */ = {
 			isa = PBXGroup;
 			children = (
+				0DE1580B240BE20A00371A7F /* Utils */,
+				0D2AC05E2402B15900F7C547 /* Views */,
+				0D2AC05D2402834600F7C547 /* Entites */,
 				0D6C771523FBA90F003F867B /* AppDelegate.swift */,
 				0D6C771A23FBA90F003F867B /* SceneDelegate.swift */,
-				0D6C771C23FBA90F003F867B /* Budget.swift */,
 				0D6C771E23FBA90F003F867B /* ContentView.swift */,
 				0D6C772023FBA910003F867B /* Assets.xcassets */,
 				0D6C772523FBA910003F867B /* LaunchScreen.storyboard */,
@@ -86,6 +123,14 @@
 				0D6C772323FBA910003F867B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0DE1580B240BE20A00371A7F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0DE1580C240BE21B00371A7F /* AppState.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		22BB4F68C36896ACB2C8AE0E /* Pods */ = {
@@ -124,7 +169,7 @@
 			);
 			name = SpendGo;
 			productName = SpendGo;
-			productReference = 0D6C771223FBA90F003F867B /* SpendGo.app */;
+			productReference = 0D6C771223FBA90F003F867B /* SpendinGo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -220,9 +265,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE15811240C06FA00371A7F /* EntryForm.swift in Sources */,
 				0D6C771D23FBA90F003F867B /* Budget.swift in Sources */,
+				0D2AC05C2402833B00F7C547 /* Entry.swift in Sources */,
+				0DE1580A240BD42C00371A7F /* ListBudgets.swift in Sources */,
+				0D2AC0602402B17000F7C547 /* DetailView.swift in Sources */,
 				0D6C771F23FBA90F003F867B /* ContentView.swift in Sources */,
+				0DE1580D240BE21B00371A7F /* AppState.swift in Sources */,
 				0D6C771923FBA90F003F867B /* SpendGo.xcdatamodeld in Sources */,
+				0D2AC0622402B1AC00F7C547 /* IndexView.swift in Sources */,
+				0DE1580F240C06CD00371A7F /* BudgetForm.swift in Sources */,
 				0D6C771623FBA90F003F867B /* AppDelegate.swift in Sources */,
 				0D6C771B23FBA90F003F867B /* SceneDelegate.swift in Sources */,
 			);
@@ -371,7 +423,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.g.crisan.SpendGo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SpendinGo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.g.crisan.SpendGo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SpendinGo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

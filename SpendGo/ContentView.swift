@@ -16,61 +16,74 @@ private let dateFormatter: DateFormatter = {
 }()
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext)
-    var viewContext   
- 
+    @EnvironmentObject var appState: AppState
+    //@Environment(\.managedObjectContext)
+    //var viewContext   
+    
+    
     var body: some View {
-        NavigationView {
-            MasterView()
-                .navigationBarTitle(Text("Master"))
-                .navigationBarItems(
-                    leading: EditButton(),
-                    trailing: Button(
-                        action: {
-                            withAnimation { Budget.create(in: self.viewContext) }
-                        }
-                    ) { 
-                        Image(systemName: "plus")
-                    }
-                )
-            Text("Detail view content goes here")
-                .navigationBarTitle(Text("Detail"))
-        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
-    }
-}
-
-struct MasterView: View {
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Budget.budgetTitle, ascending: true)],
-        animation: .default)
-    var budgets: FetchedResults<Budget>
-
-    @Environment(\.managedObjectContext)
-    var viewContext
-
-    var body: some View {
-        List {
-            ForEach(budgets, id: \.self) { budget in
-                NavigationLink(
-                    destination: DetailView(budget: budget)
-                ) {
-                    Text("Temp")
+        
+        VStack {
+            if (self.appState.showBudgetList == true) {
+                
+            } else if (self.appState.showBudgetForm == true) {
+                
+            } else {
+                
+                Spacer()
+                Text("Spendingo")
+                    .padding(26)
+                
+                VStack {
+                    Text("You have not created a bugdet yet")
+                    Text("Soon as you have at least a budget created, you can see a summary here")
+                    .frame(width: 300)
+                    .padding(10)
                 }
-            }.onDelete { indices in
-                self.budgets.delete(at: indices, from: self.viewContext)
+                .fixedSize()
+                .frame(width: 330, height: 250)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.green, lineWidth: 4)
+                )
+                
+                Spacer()
+                
+                VStack {
+                    Text("List your budgets")
+                    Text("See your budgets, manage them and your entries")
+                    .frame(width: 200)
+                    .padding(10)
+                }
+                .fixedSize()
+                .frame(width: 330, height: 130)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.blue, lineWidth: 4)
+                )
+                
+                Spacer()
+                
+                VStack {
+                    Text("Add a new Budget...")
+                    Text("Create a new budget and track your expenses! ")
+                        .frame(width: 300)
+                        .padding(10)
+                }
+                .fixedSize()
+                .frame(width: 330, height: 130)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(Color.blue, lineWidth: 4)
+                )
+                Spacer()
             }
         }
     }
 }
 
-struct DetailView: View {
-    @ObservedObject var budget: Budget
 
-    var body: some View {
-        Text("\(budget.budgetTitle ?? "No text")")
-            .navigationBarTitle(Text("Detail"))
-    }
-}
+
 
 
 struct ContentView_Previews: PreviewProvider {
